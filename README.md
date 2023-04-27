@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @Meiirman4
+- 👀 I’m interested in crypto
+- 🌱 I’m currently learning understand yourself
