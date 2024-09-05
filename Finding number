@@ -1,0 +1,54 @@
+#include <stdio.h>
+int count = 0;
+int main() {
+    int number;
+
+    // Loop until the correct password is entered
+    do {
+        printf("number: ");
+        scanf("%d", &number);
+
+        if (number >= 100) {
+            printf("Too big\n");
+        } 
+        if (number >= 90 && number < 100) {
+            printf("Still far\n");
+        }
+        if (number >= 80 && number < 90) {
+            printf("Getting closer\n");
+        }
+        if (number >= 70 && number < 80) {
+            printf("Close\n");
+        }
+        if (number >= 60 && number < 70)
+            printf("Almost there\n");
+        
+        if (number < 10){
+            printf("Too small\n");
+        }
+        if (number < 20 && number >= 10){
+            printf("Small\n");
+        }
+        if (number < 30 && number >= 20){
+            printf("Your are close\n");
+        }
+        if (number < 40 && number >= 30){
+            printf("Your are very close\n");
+        }
+        if (number < 50 && number >= 40){
+            printf("Your are very very close\n");
+        }
+        if (number < 60 && number >= 56){
+            printf("Very close\n");
+        }
+        if (number <= 54 && number >50)
+            printf("very close\n");{
+        if (number == 55)
+            printf("You win!!!\n");
+                count ++;
+            printf("number of attempt %d\n", count);
+        }
+        } while (number != 55);  // Keep looping until correct password
+
+    return 0;
+}
